@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Genius | Inscription candidat</title>
+
+    <!-- La partie meta -->
+
+    <!-- La partie Link -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Mon css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Librairies AOS, FONTAWESOME, JQUERY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/406ba45408.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+    <!--- LE CONTENU PRINCIPAL -->
+    <main class=" mon-d-flex">
+        <!-- section inscription -->
+        <section class="inscription">
+            <div class="container">
+                <form class="formulaire-inscription row" method="POST">
+                    <p>
+                        <a class="navbar-brand" href="#"><img class="logo" src="./assets/images/logo.svg" alt="Social network"></a> 
+                    </p>
+                    <h3 class="mb-4">Inscris-toi </h3>
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="name" class="form-label">Ton nom</label>
+                        <input type="text" class="form-control" id="name"  name="name" placeholder=" Ton Nom" minlength="2" require>
+                    </div>
+
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="firstname" class="form-label">Ton prénom</label>
+                        <input type="text" class="form-control" id="firstname"  name="firstname" placeholder="Ton prénom" minlength="2" require>
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="mail" class="form-label">Ton e-mail </label>
+                        <input type="email" class="form-control" id="mail"  name="mail" placeholder="genius@gmail.com" minlength="2" require>
+                    </div>
+
+
+                    <div class="mb-3 col-12">
+                        <label for="password" class="form-label">Ton mot de passe</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="XXXXXXXXXX" minlength="2" require>
+                    </div>
+
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="tel" class="form-label">Ton numéro de téléphone </label>
+                        <input type="tel" class="form-control" id="tel"  name="tel" placeholder="Ton numéro de téléphone" minlength="2" require>
+                    </div>
+
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="experience" class="form-label">Ton expérience</label>
+                        <select id="experience" class="form-select mon-select" name="experience" require>
+                            <option selected>- de 6 mois</option>
+                            <option> 12 mois</option>
+                            <option>+ de 12 mois</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 col-12 col-12 col-sm-12">
+                        <label for="ville" class="form-label">Ton ville</label>
+                        <input type="text" class="form-control" id="ville" name="ville" placeholder="Ta ville" minlength="2" require>
+                    </div>                            
+
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="langages" class="form-label">Langages</label>
+						<select id="langages" class="form-select mon-select" name="langages" multiple aria-label="multiple select example">
+							<option selected value="php">PHP</option>
+							<option value="javascript">JavaScript</option>
+							<option value="jquery">JQuery</option>
+							<option value="sql">SQL</option>
+							<option value="react">React</option>
+							<option value="java">Java</option>
+							<option value="python">Python</option>
+						</select>
+                    </div>
+
+                    <div class="mb-3 col-md-6 col-12 col-sm-12">
+                        <label for="photofile" class="form-label">Une petite photo </label>
+                        <input type="file" class="form-control" id="photofile" name="photofile" placeholder="champs pour la photo" minlength="2" require>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" id="openwork" name="openwork" checked require>
+                        <label for="openwork" class="form-label"> À l'écoute du marché</label>
+                    </div>
+
+                    <p class="container-envoye">
+                        <button type="submit" class="btn mon-btn btn-connexion">Rejoins Little Genius</button>
+                    </p>
+                    <p class="bas-formulaire"><span>Déjà inscrit ?</span> • <a href="./connexion.html"><span>Connecte-toi</span></a></p>
+                    
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="copyright">
+    <p>© Little genius. Tous droits réservés. </p>
+    </div>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- mon Script -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
