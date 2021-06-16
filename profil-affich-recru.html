@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Genius | Connexion recruteur</title>
+    <title>Little Genius | Profil recruteur</title>
 
     <!-- La partie meta -->
 
@@ -62,30 +62,63 @@
     </div>
 
     <!--- LE CONTENU PRINCIPAL -->
-    <main class="mon-d-flex p-t100">
-        <!-- section connexion -->
-        <section class="connexion">
+    <main class="mon-d-flex">
+        <!-- section inscription -->
+        <section class="profil p-t150">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <form class="formulaire" method="POST">
-                            <p>
-                                <a class="navbar-brand" href="#"><img class="logo" src="./assets/images/logo.svg" alt="Social network"></a> 
-                            </p>
-                            <h3 class="mb-4">Connexion recruteur </h3>
-                            <div class="mb-3">
-                                <label for="mail" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="mail"  name="mail" placeholder="hadjer@gmail.com" minlength="2" require>
+                <div class="container-profil col-12">
+                    <div class="col-3 side-profil">
+                        <h4>Mon profil</h4>
+                        <div class="container-img-profil">
+                            <img src="/assets/images/g7.jpeg" alt="start-up 1" class="img-fluid">
+                        </div>
+                        <!-- <span><i class="far fa-dot-circle"></i> Notifications</span> -->
+                        <ul>
+                            <li><a href=""><i class="fas fa-home"></i>&nbsp; Accueil</a></li>
+                            <li><a href=""><i class="fas fa-pen"></i>&nbsp; modifier</a></li>
+                            <li><a href=""><i class="fas fa-trash"></i>&nbsp; Supprimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 droit-profil">
+                        
+                        <form class="formulaire-inscription row" method="POST">
+
+                            <div class="mb-3 col-md-6 col-12 col-sm-12">
+                                <label for="name-entreprise" class="form-label">Nom de l'entreprise</label>
+                                <input type="text" class="form-control" id="name-entreprise"  name="name-entreprise" placeholder=" Nom de l'entreprise" minlength="2" require>
                             </div>
-                            <div class="mb-3">
+        
+                            <div class="mb-3 col-md-6 col-12 col-sm-12">
+                                <label for="name" class="form-label">Nom du contact</label>
+                                <input type="text" class="form-control" id="name"  name="name" placeholder=" Nom du contact" minlength="2" require>
+                            </div>
+        
+        
+                            <div class="mb-3 col-md-6 col-12 col-sm-12">
+                                <label for="mail" class="form-label">E-mail du contact</label>
+                                <input type="email" class="form-control" id="mail"  name="mail" placeholder="genius@gmail.com" minlength="2" require>
+                            </div>
+        
+                            <div class="mb-3 col-md-6 col-12 col-sm-12">
+                                <label for="tel" class="form-label">Téléphone du contact </label>
+                                <input type="tel" class="form-control" id="tel"  name="tel" placeholder="Téléphone du contact" minlength="2" require>
+                            </div>
+        
+        
+                            <div class="mb-3 col-12">
                                 <label for="password" class="form-label">Mot de passe</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="XXXXXXXXXX" minlength="2" require>
                             </div>
+        
+            
+                            <div class="mb-3 col-md-12 col-12 col-sm-12">
+                                <label for="description" class="form-label">Description de l'entreprise</label>
+                                <textarea class="form-control" rows="7" id="description" name="description" placeholder="description" require></textarea>
+                            </div>
+        
                             <p class="container-envoye">
-                                <button type="submit" class="btn mon-btn btn-connexion">Se connecter</button>
+                                <a href="#"></a><button type="submit" class="btn mon-btn btn-connexion">Rejoins Little Genius</button></a>
                             </p>
-                            <p class="bas-formulaire"><span>Pas encore inscrit ?</span> • <a href="./recruteur.html"><span>Crée un compte</span></a></p>
-                            
                         </form>
                     </div>
                 </div>

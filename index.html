@@ -23,44 +23,45 @@
   
 </head>
 <body>
-    <div class="container-fluid" id="navbar">
-        <header>
-            <div class="container-fluid">
-              <div class="navbar">
-                  <div class="menu-toggle">
-                    <div class="hamburger"></div>
-                  </div>
-                  <a class="navbar-brand" href="#" id="logo">
-                      <img src="assets/images/logo.svg"  class="img-fluid" alt="logo little genius">
-                  </a>
-                  
-                  <nav class="navigation">
+  <div class="container-fluid" id="navbar">
+    <header>
+        <div class="container-fluid">
+            <div class="navbar">
+                <a class="navbar-brand" href="#" id="logo">
+                    <img src="assets/images/logo.svg"  class="img-fluid" alt="logo little genius">
+                </a>
+                <nav role="navigation" class="navigation">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     <ul class="nav">
                         <li class="nav-item mon-nav">
-                          <a class="nav-link" href="geniuseur.html">Trouve un genius</a>
+                            <a class="nav-link" href="geniuseur.html">Trouve un genius</a>
                         </li>
                         <li class="nav-item mon-nav">
-                          <a class="nav-link"  href="joblist.html">Trouve un job</a>
+                            <a class="nav-link"  href="joblist.html">Trouve un job</a>
                         </li>
                         <li class="nav-item mon-nav">
-                          <a class="nav-link" href="team.html">L'équipe</a>
+                            <a class="nav-link" href="team.html">L'équipe</a>
                         </li>
                     </ul>
-                  </nav>
-  
-                  <div class="container-nav-droit">
-                    <a href="recruteur.html" class="mon-btn-border btn-recruteur">
-                        Recruteur 
-                      </a>
-                      <a href="./connexion.html" class="mon-btn btn-connecter">
-                        Se connecter
-                      </a>
-                  </div>
-  
+                    
+                </nav>
+
+                <div class="container-nav-droit">
+                <a href="recruteur.html" class="mon-btn-border btn-recruteur">
+                    Recruteur 
+                    </a>
+                    <a href="./connexion.html" class="mon-btn btn-connecter">
+                    Se connecter
+                    </a>
                 </div>
+
             </div>
-          </header>
-      </div>
+        </div>
+    </header>
+</div>
 
       <!--- LE CONTENU PRINCIPAL -->
       <main>
@@ -69,13 +70,13 @@
           <div class="container">
             <div class="row mon-d-flex-between">
               <div class="gauche col-12 col-sm-12 col-md-12 col-lg-6">
-                <h1 class="main-titre">Tu es un junior, tu es un little genius</h1>
+                <h1 class="main-titre">Tu es un junior, tu es un <span>little genius</span> </h1>
                 <p class="text-hero">
                   Trouve facilement des opportunités de job et stage, ici on n'est pas qu'un simple junior, 
                   on est aussi de petits génies
                 </p>
                 
-                <div class="container-search">
+                <!-- <div class="container-search">
                   <form class="mon-d-flex">
                     <div class="col-12">
                     <div class="row">
@@ -83,6 +84,12 @@
                       <button class="btn mon-btn btn-lancer col-lg-3 col-md-3 col-sm-12 mt-3" type="submit"><i class="mon-i fas fa-search"></i> &nbsp; Lance-toi !</button>
                     </div>
                     </div>
+                  </form>
+                </div> -->
+                <div class="container-search">
+                  <form class="d-flex col-12">
+                    <input class="form-control me-2 form-resultats" type="search" placeholder="PHP, Vue.js, JavaScript,…" aria-label="Search">
+                    <button class="btn mon-btn btn-lancer gestion-btn" type="submit"><i class="mon-i fas fa-search"></i><span>&nbsp; Lance-toi !</span></button>
                   </form>
                 </div>
 
@@ -121,18 +128,14 @@
                 <img src="/assets/images/ton-profil.svg" alt="start-up 1" class="img-fluid">
                 <h3>Crée ton profil</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur 
-                  Finis  de trouver un stage/une mission, Little genius vous 
-                  facilite
+                  Crée gratuitement et facilement ton profil en moins de 5min.
                 </p>
               </div> 
               <div class="container-explication col-12 col-md-4 col-lg-4 col-sm-12">
                 <img src="/assets/images/comp-profil.svg" alt="start-up 1" class="img-fluid">
                 <h3>Complète ton profil</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur 
-                  Finis  de trouver un stage/une mission, Little genius vous 
-                  facilite
+                  Complète ton profil pour maximiser tes chances et 
                 </p>
               </div> 
               <div class="container-explication col-12 col-md-4 col-lg-4 col-sm-12">
@@ -199,16 +202,34 @@
                 </div>
                 <h3>Développeur Java</h3>
               </div>
+              <div class="sous-genius h-100 col-12 col-sm-12 col-md-12 col-lg-2">
+                <div class="blocs-genius-mois">
+                  <img src="/assets/images/g4.jpeg" alt="start-up 1" class="img-fluid">
+                </div>
+                <h3>Intégrateur Web</h3>
+              </div>
+              <div class="sous-genius h-100 col-12 col-sm-12 col-md-12 col-lg-2">
+                <div class="blocs-genius-mois">
+                  <img src="/assets/images/g5.jpeg" alt="start-up 1" class="img-fluid">
+                </div>
+                <h3>Développeur Symfony</h3>
+              </div>
+              <div class="sous-genius h-100 col-12 col-sm-12 col-md-12 col-lg-2">
+                <div class="blocs-genius-mois">
+                  <img src="/assets/images/g6.jpeg" alt="start-up 1" class="img-fluid">
+                </div>
+                <h3>Développeur Java</h3>
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- section rejoignez-nous -->
+        <!-- section rejoignez-nous 
         <section class="rejoignez">
           <div class="container">
             <div class="row">
               <div class="text-center title-section col-12 col-sm-12 col-md-12 col-lg-12">
-                <h2>Les genius du mois</h2>
+                <h2>Pourquoi Little genius ?</h2>
                 <p class="text-content col-12 col-sm-12 col-md-12 col-lg-5">
                   Lorem ipsum dolor sit amet, consectetur 
                   Finis  de trouver un stage/une mission, Little genius vous 
@@ -217,25 +238,23 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="container-rejoignez col-12">
+            <div class="row d-flex-center">
+              <div class="container-rejoignez d-flex-center">
+                <div class="col-6">
+                  <h2>Les avantages d'être un little genius</h2>
+                  <ul>
+                    <li><i class="fas fa-arrow-circle-right"></i>&nbsp; La valorisation de tous les profils</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>&nbsp; Les profils sont vérifié avant validation</li>
+                    <li><i class="fas fa-arrow-circle-right"></i>&nbsp; Lorem ipsum dolor sit amet</li>
+                  </ul>
+                </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                  <small>JE SUIS LÀ POUR VOUS !</small>
-                  <h3 class="titre-un-projet">Vous avez un projet? J'ai hâte de vous écouter, contactez moi.</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur 
-                    Finis  de trouver un stage/une mission, Little genius vous 
-                    facilite
-                  </p>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 bg-warning">
                   <img src="assets/images/post-profilee.svg" alt="Illustration"> 
-                </div>
+                </div> 
               </div>
             </div>
-            </div>
           </div>
-        </section>
+        </section>-->
 
         <!-- section Inscris-toi -->
         <section class="explication">
@@ -244,17 +263,19 @@
               <div class="text-center title-section col-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>Abonne-toi en 1 clic </h2>
                 <p class="text-content col-5">
-                  Reçois directement des offres personnalisés que pour toi
+                  Reçois deux fois par semaines des conseils pratiques pour augmenter ta chance et décrocher ton job
                 </p>
               </div>
             </div>
 
             <div class="row">
               <div class="container-abonne col-12 col-sm-12 col-md-12 col-lg-6">
-                <form class="d-flex">
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="genius@example.com">
-                  <button class="btn mon-btn btn-lancer gestion-btn" type="submit"><i class="far mon-i fa-envelope"></i><span> &nbsp; Abonne-toi !</span></button>
+              <div class="container-search">
+                <form class="d-flex col-12">
+                  <input type="email" class="form-control form-resultats" id="exampleFormControlInput1" placeholder="genius@example.com">
+                  <button class="btn mon-btn btn-lancer gestion-btn" type="submit"><i class="far mon-i fa-envelope"></i> <span>&nbsp; Abonne-toi !</span></button>
                 </form>
+                </div>
               </div>
               
             </div>
@@ -262,7 +283,10 @@
         </section>
       
       </main>
-
+      <!-- Bouton retour en haut -->
+      <div class="scrolltop show-scroll" id="scroll_to_top">
+        <a href="#top"><i class="fas fa-arrow-top"></i></a>
+      </div>
       <!--LE FOOTER-->
       <footer class="footer">
         <div class="container-fluid">
@@ -272,7 +296,7 @@
                 <img src="assets/images/logo-blanc.svg"  class="img-fluid" alt="logo blanc lgenius">
               </a>
               <p class="description-footer">
-                Lorem ipsum dolor sit amet, ipsum dolor sit consectetur 
+                Tu es un junior, tu es un little genius
               </p>
 
               <div class="div-social">

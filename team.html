@@ -26,15 +26,15 @@
     <div class="container-fluid" id="navbar">
         <header>
             <div class="container-fluid">
-              <div class="navbar">                 
-                    <div class="menu-toggle">
-                        <div class="hamburger"></div>
-                    </div>
-                    <a class="navbar-brand" href="index.html" id="logo">
+                <div class="navbar">
+                    <a class="navbar-brand" href="#" id="logo">
                         <img src="assets/images/logo.svg"  class="img-fluid" alt="logo little genius">
                     </a>
-                    
-                    <nav class="navigation">
+                    <nav role="navigation" class="navigation">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         <ul class="nav">
                             <li class="nav-item mon-nav">
                                 <a class="nav-link" href="geniuseur.html">Trouve un genius</a>
@@ -43,19 +43,21 @@
                                 <a class="nav-link"  href="joblist.html">Trouve un job</a>
                             </li>
                             <li class="nav-item mon-nav">
-                                <a class="nav-link" href="#">L'équipe</a>
+                                <a class="nav-link" href="team.html">L'équipe</a>
                             </li>
                         </ul>
+                        
                     </nav>
-
+    
                     <div class="container-nav-droit">
                         <a href="recruteur.html" class="mon-btn-border btn-recruteur">
-                            Recruteur 
+                        Recruteur 
                         </a>
-                        <a href="/connexion.html" class="mon-btn btn-connecter">
-                            Se connecter
+                        <a href="./connexion.html" class="mon-btn btn-connecter">
+                        Se connecter
                         </a>
                     </div>
+    
                 </div>
             </div>
         </header>
@@ -68,49 +70,85 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center title-section col-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Notre superbe équipe</h2>
-                        <p class="text-content col-5">
-                        Lorem ipsum dolor sit amet, consectetur 
-                        Finis  de trouver un stage/une mission, Little genius vous 
-                        facilite
-                        </p>
+                        <h2 class="mb-3">L'équipe de Little Genius</h2>
+                        <hr>
+                        <!--- <h3 class="mt-3">
+                            Qui sommes-nous ?                   
+                        </h3> -->
                     </div>
                 </div>
 
                 <div class="row container-blocs-team g-5">
-                    <div class="container-resultats col-12 col-md-4 col-lg-4 col-sm-12">
-                        <div class="card ma-card-petite">
-                            <img src="/assets/images/g1.jpg" alt="start-up 1" class="img-fluid">
-                            <div class="card-body ma-card-body">
-                                <h5 class="card-title">Lambert Émilie</h5>
-                                <h6 class="card-title-petite">Product Manager Junior - H/F</h6>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="container-resultats col-12 col-md-4 col-lg-4 col-sm-12">
-                        <div class="card ma-card-petite">
-                            <img src="/assets/images/g1.jpg" alt="start-up 1" class="img-fluid">
-                            <div class="card-body ma-card-body">
-                                <h5 class="card-title">Lambert Émilie</h5>
-                                <h6 class="card-title-petite">Product Manager Junior - H/F</h6>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="container-resultats col-12 col-md-4 col-lg-4 col-sm-12">
-                        <div class="card ma-card-petite">
-                            <img src="/assets/images/g1.jpg" alt="start-up 1" class="img-fluid">
-                            <div class="card-body ma-card-body">
-                                <h5 class="card-title">Lambert Émilie</h5>
-                                <h6 class="card-title-petite">Product Manager Junior - H/F</h6>
-                            </div>
-                        </div>
+                    
+                    <div class="containers-blocs-team col-12 col-md-4 col-lg-3 col-sm-12">
+                        <img src="/assets/images/g2.jpeg" alt="soso" class="img-team">
+                        <h3>Sonia Patate</h3>
+                        <p>
+                            La troll des bois
+                        </p>
+                        <a href=""><button class="btn btn-connexion" type="submit"></i>&nbsp; En Savoir Plus !</button></a>
+
+                    </div>
+
+                    <div class="containers-blocs-team col-12 col-md-4 col-lg-3 col-sm-12">
+                        <img src="/assets/images/g3.jpeg" alt="soso" class="img-team">
+                        <h3>Sonia Patate</h3>
+                        <p>
+                            La troll des bois
+                        </p>
+                        <a href=""><button class="btn btn-connexion" type="submit"></i>&nbsp; En Savoir Plus !</button></a>
+
                     </div> 
 
-                </div>
+                    <div class="containers-blocs-team col-12 col-md-4 col-lg-3 col-sm-12">
+                        <img src="/assets/images/g4.jpeg" alt="soso" class="img-team">
+                        <h3>Sonia Patate</h3>
+                        <p>
+                            La troll des bois
+                        </p>
+                        <a href=""><button class="btn btn-connexion" type="submit"></i>&nbsp; En Savoir Plus !</button></a>
+                    </div> 
+
+                    <div class="containers-blocs-team col-12 col-md-4 col-lg-3 col-sm-12">
+                        <img src="/assets/images/g5.jpeg" alt="soso" class="img-team">
+                        <h3>Sonia Patate</h3>
+                        <p>
+                            La troll des bois
+                        </p>
+                        <a href=""><button class="btn btn-connexion" type="submit"></i>&nbsp; En Savoir Plus !</button></a>
+                    </div> 
+                </div> 
             </div>
-        </section>
 
-    </main>
+        </section>
+         <section class="container-team-text pt-0 container"> 
+           <h2>Qui se cache derrière Little Genius </h2>
+           <hr>
+        <div class="container-team col-12">
+            <div class="container-pics col-12 col-md-12 col-lg-4 col-sm-12">
+                <img src="/assets/images/ton-profil.svg" alt="start-up 1" class="logo-team">
+                <img src="/assets/images/webforce3.png" class="logo-wf3">
+            </div>
+            <div class="col-12 col-md-12 col-lg-8 col-sm-12">
+                <p class="team-text">
+                    Quatre profils venus de champs tous différents les uns des autres, se sont unis ensemble pour réaliser <b>Little Genius</b>.
+                    C'est durant leur formation d'apprentis Web Dev' que la Team LG a eu l'idée de Genie de créer un site d'emploi 
+                    qui facilite l'insertion des jeunes talents. 
+                    En quête d'un stage pour valider leur formations ils se sont vite rendus compte  
+                    des exigences <b>délirantes</b> du marché du travail.
+                    Si ce n'est pas des centaines d'années d'expériences exigés 
+                    ou des diplômes divers et variés de grandes écoles.
+                    <i>La Team LG en a vue des vertes et des pas mûres !</i>
+            
+                    De là ils se sont dit : "Et pourquoi pas créer un site pour valoriser les compétences, 
+                    mettre en avant des génies par leur experiences, leurs acquis, plutôt que par leur background"
+                    En même temps ce site sera un poil plus complexe et M.Chevalier devrait apprécier comme il se doit ;-)
+                    C'est ainsi que Little Genius a vu le jour. 
+                </p>
+            </div>
+        </div>
+        </section>
+</main>
 
     <!--LE FOOTER-->
     <footer class="footer">

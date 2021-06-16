@@ -23,9 +23,46 @@
   
 </head>
 <body>
+    <div class="container-fluid" id="navbar">
+        <header>
+            <div class="container-fluid">
+                <div class="navbar">                 
+                    <div class="menu-toggle">
+                        <div class="hamburger"></div>
+                    </div>
+                    <a class="navbar-brand" href="index.html" id="logo">
+                        <img src="assets/images/logo.svg"  class="img-fluid" alt="logo little genius">
+                    </a>
+                    
+                    <nav class="navigation">
+                        <ul class="nav">
+                            <li class="nav-item mon-nav">
+                                <a class="nav-link" href="geniuseur.html">Trouve un genius</a>
+                            </li>
+                            <li class="nav-item mon-nav">
+                                <a class="nav-link"  href="joblist.html">Trouve un job</a>
+                            </li>
+                            <li class="nav-item mon-nav">
+                                <a class="nav-link" href="team.html">L'équipe</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="container-nav-droit">
+                        <a href="recruteur.html" class="mon-btn-border btn-recruteur">
+                            Recruteur 
+                        </a>
+                        <a href="/connexion.html" class="mon-btn btn-connecter">
+                            Se connecter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
 
     <!--- LE CONTENU PRINCIPAL -->
-    <main class="grand-height mon-d-flex">
+    <main class="mon-d-flex p-t100">
         <!-- section connexion -->
         <section class="connexion">
             <div class="container">
@@ -35,7 +72,7 @@
                             <p>
                                 <a class="navbar-brand" href="#"><img class="logo" src="./assets/images/logo.svg" alt="Social network"></a> 
                             </p>
-                            <h3 class="mb-4">Identifie-toi </h3>
+                            <h3 class="mb-4">Connexion candidat</h3>
                             <div class="mb-3">
                                 <label for="mail" class="form-label">E-mail</label>
                                 <input type="email" class="form-control" id="mail"  name="mail" placeholder="hadjer@gmail.com" minlength="2" require>
@@ -57,6 +94,55 @@
 
     </main>
 
+    <!--LE FOOTER-->
+    <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+              <a class="navbar-brand" href="#" id="logo">
+                <img src="assets/images/logo-blanc.svg"  class="img-fluid" alt="logo blanc lgenius">
+              </a>
+              <p class="description-footer">
+                Lorem ipsum dolor sit amet, ipsum dolor sit consectetur 
+              </p>
+
+              <div class="div-social">
+                <a class="social-bouton" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-bouton" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-bouton" href="#">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4"> 
+              <ul class="footer-ul">
+                <span>À PROPOS</span>
+                <li>l'Équipe</li>
+                <li>Partenariats offres</li>
+                <li>Offres de stage</li>
+                <li>Nous rejoindre</li>
+                <li>Nous rencontrer</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+              <ul class="footer-ul">
+                <span>COMMENT ÇA MARCHE ?</span>
+                <li>Offres de stage</li>
+                <li>Offres d'emploi</li>
+                <li>Partenariats offres</li>
+                <li>Nos salons</li>
+                <li>Déposer son CV</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
     <div class="copyright">
     <p>© Little genius. Tous droits réservés. </p>
     </div>
